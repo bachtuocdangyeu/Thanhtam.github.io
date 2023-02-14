@@ -1,0 +1,89 @@
+.menu1 {
+    width:1000px;
+    margin:0px auto;
+    background:#e2f1f8;
+    height: 50px;
+    margin-top: auto;
+}
+.menu1 li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu1 a {
+    transition:all linear 0.15s;
+    color:#ddd8d8;
+    text-decoration:none;
+}
+.menu1 li:hover > a, .menu1 .current-item > a {
+    text-decoration:none;
+    color:#9b8f91;
+} 
+.menu1 .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+/*----- css cho phần menu cha -----*/
+.menu1 > ul > li {
+    float:none;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu1 > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:rgb(32, 13, 5);
+}
+.menu1 > ul > li:hover > a, .menu1 > ul > .current-item > a {
+    background:#2e2728;
+}
+/*----css cho menu con----*/
+.menu1 li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+/*header*/
+.header img{
+    width:100px;
+    height:100px;
+}
+.search {
+    position:absolute;
+    margin-top: 25px;
+}
+
+input{
+    border:3px solid #333;
+    height:40px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+.header a{
+    float:right;
+    margin:right:25px;
+}
